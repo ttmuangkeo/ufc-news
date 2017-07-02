@@ -1,0 +1,27 @@
+
+<div class="container">
+    <div class="row">
+        <hr>
+        <div class="col-md-6 col-md-offset-3">
+            <div class="card text-center" ng-repeat="events in events">
+                <h3 class="text-info">{{events.base_title}}</h3>
+                <h3 class="text-info">{{events.title_tag_line}}</h3>
+                <img class="artwork" ng-src="{{events.secondary_feature_image}}">
+                <a href="{{events.ticketurl}}" class="text-warning">Buy Tickets Here</a>
+                <br>
+                <div class="card-block">
+                <h3>
+                <a target="__blank" href="{{events.trailer_url}}" class="text-warning">Trailer</a>
+                </h3>
+                <h3 class="text-danger">{{events.fighter_status}}</h3>
+                <h3 class="text-primary">Date: </h3>
+                <h4 class="text-danger"><span class="text-info">Start:</span> {{events.event_dategmt}}</h4>
+                <h4 class="text-danger"><span class="text-info">End:</span>{{events.end_event_dategmt}}</h4>
+                <h4 class="text-danger"><span class="text-info">Starting At: </span>{{events.event_time_text}}</h4>
+                <h3 class="text-info">Location</h3>
+                <h4 class="text-danger">{{events.location}} <br> {{events.arena}}</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

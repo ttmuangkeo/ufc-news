@@ -1,0 +1,29 @@
+<section id="artistbg">
+    <div class="container">
+        <div class="row-fluid">
+            <div class="col-md-12">
+                <h1>Artist</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <form ng-submit="search()" class="text-center">
+            <input class="form-control text-center" type="text" ng-model='artist' placeholder="Enter Artist Name">
+            <br>
+            <button type='submit' class="btn button_1 btn-lg">Search</button>
+        </form>
+    </div>
+</section>
+<div class="container">
+    <div class="row">
+        <hr>
+        <div ng-repeat="test in test">
+            <div id="content" class="col-md-4">
+                <h3 class="text-info">Album: <span class="text-danger">{{test.collectionName}}</span></h3>
+                <img class="artwork" ng-src="{{test.artworkUrl100}}">
+                <a target="__blank" href="{{test.trackViewUrl}}" class="glyphicon glyphicon-user btn-lg button_1">ArtistInfo</a>
+                <h4 class="text-danger">{{test.trackName}}</h4>
+            </div>
+        </div>
+    </div>
+</div>
