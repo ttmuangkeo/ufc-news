@@ -1,7 +1,7 @@
 <h1>UFC News</h1>
 <h4>Tim Muangkeo</h4>
 
-<img src="../img/readme/screenshot1.png" alt="Home Page">
+<img src="public/img/readme/screenshot1.png" alt="Home Page">
 
 <h2>Info</h2>
 <p>A fan based web page for UFC enthusiast. Dedicated to all UFC fans.</p>
@@ -46,5 +46,5 @@ To install this project locally perform the following steps:
 
 <h2>Links</h2>
 <a href="https://trello.com/b/VTSyaYEI/doggleganger">Trello Board</a> |
- <a href="https://doggleganger.herokuapp.com">HerokuApp</a> | -->
- <a href="https://github.com/alainabuzas/project-3">GitHub</a>
+ <a href="https://doggleganger.herokuapp.com">HerokuApp</a> | 
+ <a href="https://github.com/alainabuzas/project-3">GitHub</a> -->
