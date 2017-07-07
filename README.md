@@ -23,3 +23,7 @@
 <h2>Up to date title holders</h2>
 <img src="public/img/readme/screenshot2.png" alt="Title Holders">
 <img src="public/img/readme/screenshot3.png" alt="Fighter Search">
+<br>
+<h2>News/Articles</h2>
+<p>The most up to date activities revolving the UFC</p>
+<img src="public/img/readme/screenshot4.png" alt="News articles">
