@@ -2,27 +2,29 @@
 <br>
 <br>
 <div ng-if="!fighters">
-    <h1>Loading...</h1>
+    <h1 class="text-center animated infinite pulse">Loading...</h1>
 </div>
 <div ng-if="fighters">
-<div class="container">
-    <div class="row">
-        <div ng-repeat="fighters in fighters | filter:searchText">
-            <div class="col-md-8">
-                <div class="card wow fadeInLeftBig">
-                    <h2 class="text-info">{{fighters.first_name}} {{fighters.last_name}}</h2>
-                    <hr>
-                    <h3 class="text-primary card-text">Record</h3>
-                    <h4 class="text-info">Wins: {{fighters.wins}}</h4>
-                    <h4 class="text-danger">Losses: {{fighters.losses}}</h4>
-                    <br>
-                    <h3><a href="{{fighters.link}}">Profile</a></h3>
+    <div id="banner">
+        <div class="container center">
+            <div class="row ">
+                <div ng-repeat="fighters in fighters | filter:searchText | limitTo:100 | orderBy: 'first_name'">
+                    <div class="col-md-4 wow fadeInRightBig">
+                        <img class="img-responsive bg img-circle" ng-src="{{fighters.profile_image}}" alt="">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card bg wow fadeInLeftBig">
+                            <h2 class="text-info">{{fighters.first_name}} {{fighters.last_name}}</h2>
+                            <hr>
+                            <h3 class="text-primary card-text">Record</h3>
+                            <h4 class="text-info">Wins: {{fighters.wins}}</h4>
+                            <h4 class="text-danger">Losses: {{fighters.losses}}</h4>
+                            <br>
+                            <h3><a href="{{fighters.link}}">Profile</a></h3>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4 wow fadeInRightBig">
-                <img class="img-responsive img-circle" ng-src="{{fighters.profile_image}}" alt="">
             </div>
         </div>
     </div>
-</div>
 </div>

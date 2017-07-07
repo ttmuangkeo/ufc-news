@@ -4,6 +4,7 @@
 }
 .center {
 	padding: 12em;
+    border: 2px solid white; 
 }
 .white {
     color: white;
@@ -12,8 +13,12 @@
 .display {
     font-size: 43pt;
 }
+
 .display-3{
     font-size: 28pt;
+}
+.bg {
+    background-color:rgba(255, 255, 255, .9)
 }
 
 .title-holder {

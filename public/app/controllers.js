@@ -22,13 +22,17 @@ angular.module('myCtrls', ['somethingServices'])
                 image: 'img/5.jpg'
             }, {
                 image: 'img/6.jpg'
+            }, {
+                image: 'img/1.jpg'
+            }, {
+                image: 'img/7.jpg'
             }
         ];
 
     }])
     .controller('FighterCtrl', ['$scope', '$http', function($scope, $http) {
         $http({
-            url: 'http://ufc-data-api.ufc.com/api/v3/iphone/fighters/',
+            url: 'http://ufc-data-api.ufc.com/api/v3/iphone/fighters/',            
         }).then(function success(req) {
             console.log('are these my fight2ers?', req.data)
             $scope.fighters = req.data
