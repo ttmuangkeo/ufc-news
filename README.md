@@ -3,13 +3,13 @@
 
 <img src="public/img/readme/screenshot1.png" alt="Home Page">
 
-<h2>Info</h2>
+<h2>Intro</h2>
 <p>A fan based web page for UFC enthusiast. Dedicated to all UFC fans.</p>
 
 <h2>Technologies Used</h2>
 <ul>
     <li>HTML5
-    <li>CSS3, implementing CSS Grid</li>
+    <li>CSS</li>
     <li>AngularJS</li>
     <li>Node.js/Express.js</li>
     <li>UFC API: Grabs information of all fighters, news, events, ect.</li>
@@ -20,5 +20,6 @@
 <br>
 
 <h2>Title holders/Fighter Search</h2>
-<p>Up to date title holders</p>
+<h2>Up to date title holders</h2>
 <img src="public/img/readme/screenshot2.png" alt="Title Holders">
+<img src="public/img/readme/screenshot3.png" alt="Fighter Search">
