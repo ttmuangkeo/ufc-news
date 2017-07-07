@@ -21,14 +21,15 @@
 <br>
 <hr>
 <br>
-<div class="container">
     <h1 id="title" class="text-center text-info display wow fadeIn">Title Holders</h1>
+
+<div class="container-fluid">
     <div class="row center-block">
         <div ng-repeat="title in title">
             <div class="col-md-6">
-                <div class="card wow fadeInUpBig">
+                <div id="banner" class="card wow fadeInUpBig">
                     <h1 class="text-center"><strong>{{title.weight_class}}</strong></h1>
-                    <h3 class="text-center">{{title.first_name}} <strong>"{{title.nickname}}"</strong> {{title.last_name}}</h3>
+                    <h2 class="text-center">{{title.first_name}} <strong>"{{title.nickname}}"</strong> {{title.last_name}}</h2>
                     <img class="img-responsive title-holder center-block" ng-src="{{title.belt_thumbnail}}" alt="">
                     <h3 class="text-primary text-center">Wins: <span class="text-warning">{{title.wins}} </span> Losses: <span class="text-warning">{{title.losses}}</span></h3>
                 </div>

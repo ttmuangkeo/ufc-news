@@ -5,9 +5,9 @@
     <h1 class="text-center animated infinite pulse">Loading...</h1>
 </div>
 <div ng-if="fighters">
-    <div id="banner">
+    
         <div class="container center">
-            <div class="row ">
+            <div class="row">
                 <div ng-repeat="fighters in fighters | filter:searchText | limitTo:100 | orderBy: 'first_name'">
                     <div class="col-md-4 wow fadeInRightBig">
                         <img class="img-responsive bg img-circle" ng-src="{{fighters.profile_image}}" alt="">
@@ -26,5 +26,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    
 </div>

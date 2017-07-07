@@ -5,6 +5,7 @@
 .center {
 	padding: 12em;
     border: 2px solid white; 
+    z-index: 3;
 }
 .white {
     color: white;
@@ -24,11 +25,13 @@
 .title-holder {
     width: 50%;
 }
-
+.fixed-size {
+    width: 100%;
+}
 .slide {
     width: 100%;
     border: 2px solid black;
-    height: 500px;
+    height: 600px;
     transition: all 1s;
 }
 
@@ -61,6 +64,17 @@ input:focus {
 #banner {
     min-height: 550px;
     background-image: url('../img/banner.jpg');
+    text-align: center;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#banner-news {
+    min-height: 550px;
+    background-image: url('../img/banner2.jpg');
     text-align: center;
     background-position: center;
     background-repeat: no-repeat;

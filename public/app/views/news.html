@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
     <div class="row">
         <hr>
         <div ng-repeat="news in news">
@@ -7,6 +7,29 @@
                 <hr>
                 <img class="img-responsive artwork" ng-src="{{news.thumbnail}}">
                 <h4 class="text-info">Date: <br> <span class="text-danger">{{news.article_date}}</span></h4>
+            </div>
+        </div>
+    </div>
+</div> -->
+<div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center display">Daily News</h1>
+            </div>
+            <br>
+            <div class="text-center" ng-repeat="news in news">
+                <div class="card col-md-7">
+                    <div class="wow slideInLeft">
+                        <h1 class="text-warning">{{news.title}}</h1>
+                        <h4>{{news.introduction}}</h4>
+                        <h4 class="text-info">Date: <br> <span class="text-danger">{{news.article_date}}</span></h4>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <img class="img-responsive fixed-size wow slideInRight" ng-src="{{news.thumbnail}}" alt="news article">
+                    <br>
+                </div>
             </div>
         </div>
     </div>
