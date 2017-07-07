@@ -1,22 +1,23 @@
-<!-- <div class="container">
+<div class="container-fluid">
     <div class="row">
-        <hr>
-        <div ng-repeat="news in news">
-            <div id="content" class="col-md-12">
-                <h3 class="text-warning">{{news.title}}</h3>
-                <hr>
-                <img class="img-responsive artwork" ng-src="{{news.thumbnail}}">
-                <h4 class="text-info">Date: <br> <span class="text-danger">{{news.article_date}}</span></h4>
-            </div>
+        <div class="col-md-12">
+            <h1 class="text-center display">Daily News</h1>
         </div>
     </div>
-</div> -->
+</div>
+<div class="container-fluid">
+    <div class="row animated zoomIn">
+        <uib-carousel interval="myInterval">
+            <uib-slide class="slide-news" ng-repeat="news in news" active="active" index="$index">
+                <img class="img-fluid slide-news center-block" ng-src="{{news.thumbnail}}">
+            </uib-slide>
+        </uib-carousel>
+    </div>
+</div>
 <div>
+<hr>
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <h1 class="text-center display">Daily News</h1>
-            </div>
             <br>
             <div class="text-center" ng-repeat="news in news">
                 <div class="card col-md-7">

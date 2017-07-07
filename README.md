@@ -28,3 +28,7 @@
 <h2>News/Articles</h2>
 <p>The most up to date activities revolving the UFC</p>
 <img src="public/img/readme/screenshot4.png" alt="News articles">
+<br>
+<h2>Events/UFC PPV</h2>
+<p>UFC events with relative information such as date, trailer, ticket prices, ect.</p>
+<img src="public/img/readme/screenshot5.png" alt="events">

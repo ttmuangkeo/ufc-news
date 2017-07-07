@@ -35,6 +35,16 @@
     transition: all 1s;
 }
 
+.slide-news {
+    width: 100%;
+    border: 2px solid black;
+    height: 500px;
+    transition: all 1s;
+}
+.slide-news:hover {
+    width: 100%;
+    transform: scale(1.1);
+}
 .slide:hover {
     width: 100%;
     transform: scale(1.1);
