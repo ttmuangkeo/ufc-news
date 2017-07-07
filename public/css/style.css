@@ -12,6 +12,9 @@
 .display {
     font-size: 43pt;
 }
+.display-3{
+    font-size: 28pt;
+}
 
 .title-holder {
     width: 50%;
@@ -39,6 +42,15 @@
 
 .row {
     border: 2px solid black;
+}
+
+input {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+input:focus {
+    width: 100%;
 }
 
 #banner {
