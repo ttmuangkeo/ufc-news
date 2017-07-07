@@ -1,4 +1,4 @@
-#UFC News
+<h1>UFC Daily News</h1>
 <h4>Created by: Tim Muangkeo</h4>
 
 <img src="public/img/readme/screenshot1.png" alt="Home Page">
@@ -22,6 +22,7 @@
 <h2>Title holders/Fighter Search</h2>
 <p>Up to date title holders</p>
 <img src="public/img/readme/screenshot2.png" alt="Title Holders">
+<br>
 <img src="public/img/readme/screenshot3.png" alt="Fighter Search">
 <br>
 <h2>News/Articles</h2>
