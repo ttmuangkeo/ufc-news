@@ -2,7 +2,7 @@
     <div class="row">
         <hr>
         <div class="col-md-6 col-md-offset-3">
-        <label>Search: <input ng-model="searchText"> </label>
+        <label>Search: <input ng-model="searchText"></label>
         
             <div class="card text-center" ng-repeat="fighters in fighters | filter:searchText">
                 <h3 class="text-info"><span class="text-danger">Name:</span> {{fighters.first_name}} {{fighters.last_name}}</h3>

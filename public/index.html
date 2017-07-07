@@ -8,15 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>UFC</title>
     <!-- Bootstrap -->
-<link href='https://api.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.css' rel='stylesheet' />
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link href="/MDB/css/style.css" rel="stylesheet">
     <link href="/MDB/css/mdb.min.css" rel="stylesheet">
-
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -27,23 +25,27 @@
 
 <body>
     <header>
-        <div class="container animated fadeInDown">
-            <div id="branding">
-                <a href="/">
-                    <img  src="img/title.png" alt="">
-                </a>
+        <nav class="navbar navbar-dark bg-primary">
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="col-md-4">
+                        <a class="img-responsive" class="navbar-brand" href="/"><img src="img/title.png" alt=""></a>
+                    </div>
+                    <div class="col-md-2">
+                        <h2 class="text-center white"><a href="/fighters">Fighters</a></h2>
+                    </div>
+                    <div class="col-md-2">
+                        <h2 class="text-center white"><a href="/news">Latest News</a></h2>
+                    </div>
+                    <div class="col-md-2">
+                        <h2 class="text-center white"><a href="/events">Lastest Events</a></h2>
+                    </div>
+                    <div class="col-md-2">
+                        <h2 class="text-center white"><a href="/girls">Octagon Girls</a></h2>
+                    </div>
+                </div>
             </div>
-            <nav class="navbar navbar-toggleable-md">
-                <ul>
-                    <li><a class="navbar-nav" href="/fighters">Fighters</a></li>
-                    <li><a class="navbar-nav" href="/news">Lastest News</a></li>
-                    <li><a class="navbar-nav" href="/events">Lastest Events</a></li>  
-                    <li><a class="navbar-nav" href="/girls">Octagon Girls</a></li>
-                    <li><a class="navbar-nav" href="/landing">landing</a></li>
-                </ul>
-            </nav>
-        </div>
-
+        </nav>
     </header>
     <div ui-view></div>
     <header>
@@ -54,10 +56,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular-resource.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.2.1/ui-bootstrap-tpls.js"></script>
     <script type="text/javascript" src="/MDB/js/mdb.min.js"></script>
-    <script src='https://api.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.js'></script>
-
     <script src="app/app.js"></script>
     <script src="js/main.js"></script>
     <script src="app/controllers.js"></script>

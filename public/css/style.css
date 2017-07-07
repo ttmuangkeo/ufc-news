@@ -1,5 +1,30 @@
-#map {
-	height: 400px;
-	width: 100%;
-	border: 2px solid black;
+.white {
+	color: white;
 }
+
+.display {
+	font-size: 50pt;
+}
+
+.title-holder {
+	width: 50%;
+}
+
+.slide {
+	width:100%;
+	border: 2px solid blue; 
+	height: 500px;
+	transition: all 1s;
+}
+.slide:hover {
+	width:100%;
+	transform: scale(1.1);
+}
+.scroll {
+   height: 370px;
+   width: 100%;
+   border: 2px solid darkblue;
+   overflow: auto;
+   padding: 10px 
+}
+
