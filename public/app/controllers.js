@@ -9,16 +9,20 @@ angular.module('myCtrls', ['somethingServices'])
             console.log(err);
         });
 
-        $scope.myInterval = 3000;
+        $scope.myInterval = 2000;
         $scope.noWrapSlides = false;
         $scope.active = 0;
         $scope.slides = [{
-                image: 'img/1.jpg'
+                image: 'img/4.jpg'
             }, {
                 image: 'img/2.jpg'
             }, {
                 image: 'img/3.jpg'
-            },
+            }, {
+                image: 'img/5.jpg'
+            }, {
+                image: 'img/6.jpg'
+            }
         ];
 
     }])

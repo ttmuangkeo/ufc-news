@@ -1,21 +1,19 @@
-<div class="container">
-    <div class="row">
+<div id="banner" class="container-fluid">
+    <div class="row center">
         <div class="col-md-12">
-            <h1 class="text-center display animated fadeInDown">The UFC Page</h1>
+            <h1 class="text-center display animated fadeInDown">The <img class="animated infinite pulse" src="img/title.png" alt=""> Page</h1>
             <h1 class="text-center">
                 <h2 class="animated fadeInUp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate placeat ipsum non beatae ea labore in vitae enim excepturi veritatis mollitia sapiente repellat dolore, incidunt ad facere quae perferendis, accusantium!</h2>
             </h1>
         </div>
     </div>
 </div>
-<br>
 <hr>
-<br>
-<div class="container">
-    <div class="row-fluid animated zoomIn">
+<div class="container-fluid">
+    <div class="row animated zoomIn">
         <uib-carousel interval="myInterval">
-            <uib-slide ng-repeat="slide in slides" active="active" index="$index">
-                <img class="img-responsive slide center-block" ng-src="{{slide.image}}">
+            <uib-slide class="slide" ng-repeat="slide in slides" active="active" index="$index">
+                <img class="slide center-block" ng-src="{{slide.image}}">
             </uib-slide>
         </uib-carousel>
     </div>
@@ -24,20 +22,20 @@
 <hr>
 <br>
 <div class="container">
-    <h1 class="text-center display">Title Holders</h1>
-    <div class="row scroll">
+    <h1 id="title" class="text-center display">Title Holders</h1>
+    <div class="row scroll center-block">
         <div ng-repeat="title in title">
             <div class="col-md-6">
                 <div class="card">
-                    <h4 class="text-center"><strong>{{title.weight_class}}</strong></h4>
-                    <h3 class="text-center">{{title.first_name}} "{{title.nickname}}" {{title.last_name}}</h3>
+                    <h1 class="text-center"><strong>{{title.weight_class}}</strong></h1>
+                    <h3 class="text-center">{{title.first_name}} <strong>"{{title.nickname}}"</strong> {{title.last_name}}</h3>
                     <img class="img-responsive title-holder center-block" ng-src="{{title.belt_thumbnail}}" alt="">
-                    <h3 class="text-primary text-center">Wins: <span class="text-warning">{{title.wins}}</span></h3>
-                    <h3 class="text-primary text-center">Losses: <span class="text-warning">{{title.losses}}</span></h3>
+                    <h3 class="text-primary text-center">Wins: <span class="text-warning">{{title.wins}} </span> Losses: <span class="text-warning">{{title.losses}}</span></h3>
                 </div>
                 <br>
             </div>
         </div>
     </div>
 </div>
+<br>
 <hr>
