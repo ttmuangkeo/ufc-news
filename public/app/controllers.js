@@ -1,7 +1,7 @@
 angular.module('myCtrls', ['somethingServices'])
     .controller('HomeCtrl', ['$scope', '$http', function($scope, $http) {
         $http({
-            url: 'https://ufc-data-api.ufc.com/api/v3/iphone/fighters/title_holders'
+            url: 'http://ufc-data-api.ufc.com/api/v3/iphone/fighters/title_holders'
         }).then(function success(res) {
             $scope.title = res.data
             console.log(res)
@@ -32,7 +32,7 @@ angular.module('myCtrls', ['somethingServices'])
     }])
     .controller('FighterCtrl', ['$scope', '$http', function($scope, $http) {
         $http({
-            url: 'https://ufc-data-api.ufc.com/api/v3/iphone/fighters/',            
+            url: 'http://ufc-data-api.ufc.com/api/v3/iphone/fighters/',            
         }).then(function success(req) {
             console.log('are these my fight2ers?', req.data)
             $scope.fighters = req.data
@@ -48,7 +48,7 @@ angular.module('myCtrls', ['somethingServices'])
                 $scope.noWrapSlides = false;
         $scope.active = 0;
         $http({
-            url: 'https://ufc-data-api.ufc.com/api/v1/us/news',
+            url: 'http://ufc-data-api.ufc.com/api/v1/us/news',
         }).then(function sucess(req) {
             console.log('fighters news', req)
             $scope.news = req.data;
@@ -58,7 +58,7 @@ angular.module('myCtrls', ['somethingServices'])
     }])
     .controller('EventsCtrl', ['$scope', '$http', function($scope, $http) {
         $http({
-            url: 'https://ufc-data-api.ufc.com/api/v1/us/events'
+            url: 'http://ufc-data-api.ufc.com/api/v1/us/events'
         }).then(function success(req) {
             $scope.events = req.data
             console.log('events', req)
@@ -68,7 +68,7 @@ angular.module('myCtrls', ['somethingServices'])
     }])
     .controller('GirlCtrl', ['$scope', '$http', function($scope, $http) {
         $http({
-            url: 'https://ufc-data-api.ufc.com/api/v3/iphone/octagon_girls'
+            url: 'http://ufc-data-api.ufc.com/api/v3/iphone/octagon_girls'
         }).then(function success(req) {
             $scope.girls = req.data
             console.log('girls', req)
