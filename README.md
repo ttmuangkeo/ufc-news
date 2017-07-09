@@ -33,4 +33,7 @@
 <p>UFC events with relative information such as date, trailer, ticket prices, ect.</p>
 <img src="public/img/readme/screenshot5.png" alt="events">
 <h2>Coming Soon</h2>
-<p>Video media and gallery</p>
+
+<li>Video Search</li>
+<li>Image gallery</li>
+<li>Mobile Responsive</li>
