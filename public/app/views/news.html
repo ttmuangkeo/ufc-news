@@ -24,11 +24,11 @@
                     <div class="wow slideInLeft">
                         <h1 class="text-warning">{{news.title}}</h1>
                         <h4>{{news.introduction}}</h4>
-                        <h4 class="text-info">Date: <br> <span class="text-danger">{{news.article_date}}</span></h4>
+                        <h4 class="text-info">Date: <br> <span class="text-danger">{{news.article_date | date: "fullDate"}}</span></h4>
                     </div>
                 </div>
                 <div class="col-md-5">
-                    <img class="img-responsive fixed-size wow slideInRight" ng-src="{{news.thumbnail}}" alt="news article">
+                    <img class="img-responsive thumbnail fixed-size wow slideInRight" ng-src="{{news.thumbnail}}" alt="Article image..">
                     <br>
                 </div>
             </div>

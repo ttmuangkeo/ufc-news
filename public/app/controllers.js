@@ -13,39 +13,48 @@ angular.module('myCtrls', ['somethingServices'])
         $scope.noWrapSlides = false;
         $scope.active = 0;
         $scope.slides = [{
-                image: 'img/4.jpg'
-            }, {
-                image: 'img/2.jpg'
-            }, {
-                image: 'img/3.jpg'
-            }, {
-                image: 'img/5.jpg'
-            }, {
-                image: 'img/6.jpg'
-            }, {
-                image: 'img/1.jpg'
-            }, {
-                image: 'img/7.jpg'
-            }
-        ];
+            image: 'img/4.jpg'
+        }, {
+            image: 'img/2.jpg'
+        }, {
+            image: 'img/3.jpg'
+        }, {
+            image: 'img/5.jpg'
+        }, {
+            image: 'img/6.jpg'
+        }, {
+            image: 'img/1.jpg'
+        }, {
+            image: 'img/7.jpg'
+        }];
+
 
     }])
     .controller('FighterCtrl', ['$scope', '$http', function($scope, $http) {
         $http({
-            url: 'http://ufc-data-api.ufc.com/api/v3/iphone/fighters/',            
+            url: 'http://ufc-data-api.ufc.com/api/v3/iphone/fighters/',
         }).then(function success(req) {
             console.log('are these my fight2ers?', req.data)
             $scope.fighters = req.data
         }).catch(function error(err) {
             console.log(err);
+        })
+
+        $scope.search = function() {
+        $http({
+            url: 'http://ufc-data-api.ufc.com/api/v3/iphone/octagon_girls'
+        }).then(function success(req) {
+            $scope.girls = req.data
+            console.log('girls', req)
+        }).catch(function error(err) {
+            console.log(err);
         });
-        $scope.search = function(id) {
-            console.log('yea bro', id)
+            
         }
     }])
     .controller('NewsCtrl', ['$scope', '$http', function($scope, $http) {
         $scope.myInterval = 2000;
-                $scope.noWrapSlides = false;
+        $scope.noWrapSlides = false;
         $scope.active = 0;
         $http({
             url: 'http://ufc-data-api.ufc.com/api/v1/us/news',
@@ -58,21 +67,13 @@ angular.module('myCtrls', ['somethingServices'])
     }])
     .controller('EventsCtrl', ['$scope', '$http', function($scope, $http) {
         $http({
-            url: 'http://ufc-data-api.ufc.com/api/v1/us/events'
+            url: 'http://ufc-data-api.ufc.com/api/v3/iphone/events'
         }).then(function success(req) {
             $scope.events = req.data
-            console.log('events', req)
+            
+            console.log('events', req.data)
         }).catch(function error(err) {
             console.log(err);
-        });
-    }])
-    .controller('GirlCtrl', ['$scope', '$http', function($scope, $http) {
-        $http({
-            url: 'http://ufc-data-api.ufc.com/api/v3/iphone/octagon_girls'
-        }).then(function success(req) {
-            $scope.girls = req.data
-            console.log('girls', req)
-        }).catch(function error(err) {
-            console.log(err);
-        });
+        })
+
     }])
