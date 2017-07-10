@@ -33,9 +33,4 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
 
     $locationProvider.html5Mode(true);
 }]);
-//4. you should be able to login and be persistent. auth user instead of giving a 404 error
-// .config(['$httpProvider', function($httpProvider) {
-//add the AuthInterceptor in the list of interceptors
-//use the interceptor to add on the token from the service factory
-// $httpProvider.interceptors.push('AuthInterceptor')
-// }]);
+

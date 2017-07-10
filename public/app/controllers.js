@@ -4,7 +4,7 @@ angular.module('myCtrls', ['somethingServices'])
             url: 'http://ufc-data-api.ufc.com/api/v3/iphone/fighters/title_holders'
         }).then(function success(res) {
             $scope.title = res.data
-            console.log(res)
+
         }).catch(function error(err) {
             console.log(err);
         });
@@ -34,23 +34,12 @@ angular.module('myCtrls', ['somethingServices'])
         $http({
             url: 'http://ufc-data-api.ufc.com/api/v3/iphone/fighters/',
         }).then(function success(req) {
-            console.log('are these my fight2ers?', req.data)
+
             $scope.fighters = req.data
         }).catch(function error(err) {
             console.log(err);
         })
 
-        $scope.search = function() {
-        $http({
-            url: 'http://ufc-data-api.ufc.com/api/v3/iphone/octagon_girls'
-        }).then(function success(req) {
-            $scope.girls = req.data
-            console.log('girls', req)
-        }).catch(function error(err) {
-            console.log(err);
-        });
-            
-        }
     }])
     .controller('NewsCtrl', ['$scope', '$http', function($scope, $http) {
         $scope.myInterval = 2000;
@@ -59,10 +48,10 @@ angular.module('myCtrls', ['somethingServices'])
         $http({
             url: 'http://ufc-data-api.ufc.com/api/v1/us/news',
         }).then(function sucess(req) {
-            console.log('fighters news', req)
+
             $scope.news = req.data;
         }).catch(function error(err) {
-            console.log('err', err)
+            console.log(err)
         });
     }])
     .controller('EventsCtrl', ['$scope', '$http', function($scope, $http) {
@@ -70,8 +59,8 @@ angular.module('myCtrls', ['somethingServices'])
             url: 'http://ufc-data-api.ufc.com/api/v3/iphone/events'
         }).then(function success(req) {
             $scope.events = req.data
-            
-            console.log('events', req.data)
+
+
         }).catch(function error(err) {
             console.log(err);
         })

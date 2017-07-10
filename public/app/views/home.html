@@ -10,7 +10,7 @@
 </div>
 <hr>
 <div class="container-fluid">
-    <div class="row animated zoomIn">
+    <div class="row wow zoomIn">
         <uib-carousel interval="myInterval">
             <uib-slide class="slide" ng-repeat="slide in slides" active="active" index="$index">
                 <img class="slide center-block" ng-src="{{slide.image}}">
@@ -30,8 +30,8 @@
                 <div id="banner" class="card wow fadeInUpBig">
                     <h1 class="text-center"><strong>{{title.weight_class}}</strong></h1>
                     <h2 class="text-center">{{title.first_name}} <strong>"{{title.nickname}}"</strong> {{title.last_name}}</h2>
+                    <h3 class="white-text text-center"><strong>Wins: <span class="blue-text">{{title.wins}} </span> Losses: <span class="red-text">{{title.losses}}</span></strong></h3>
                     <img class="img-responsive title-holder center-block" ng-src="{{title.belt_thumbnail}}" alt="">
-                    <h3 class="text-primary text-center"><strong>Wins: <span class="text-warning">{{title.wins}} </span> Losses: <span class="text-danger">{{title.losses}}</span></strong></h3>
                 </div>
                 <br>
             </div>

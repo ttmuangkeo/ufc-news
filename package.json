@@ -15,9 +15,7 @@
   },
   "dependencies": {
     "angular-ui-bootstrap": "^2.5.0",
-    "bcrypt": "^0.8.7",
     "body-parser": "^1.15.2",
-    "dotenv": "^4.0.0",
     "express": "^4.14.0",
     "express-jwt": "^3.4.0",
     "jsonwebtoken": "^7.1.6",
