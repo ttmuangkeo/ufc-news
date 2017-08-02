@@ -24,12 +24,7 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
             url: '/events',
             templateUrl: 'app/views/events.html',
             controller: 'EventsCtrl'
-        })
-        .state('girls', {
-            url: '/girls',
-            templateUrl: 'app/views/girls.html',
-            controller: 'GirlCtrl'
-        })
+        });
 
     $locationProvider.html5Mode(true);
 }]);

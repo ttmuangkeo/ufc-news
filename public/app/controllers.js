@@ -42,13 +42,13 @@ angular.module('myCtrls', ['somethingServices'])
 
     }])
     .controller('NewsCtrl', ['$scope', '$http', function($scope, $http) {
+
         $scope.myInterval = 2000;
         $scope.noWrapSlides = false;
         $scope.active = 0;
         $http({
             url: 'http://ufc-data-api.ufc.com/api/v1/us/news',
         }).then(function sucess(req) {
-
             $scope.news = req.data;
         }).catch(function error(err) {
             console.log(err)

@@ -1,12 +1,14 @@
-.affix {
-    width: 100%;
-    z-index: 10;
-}
-
 .center {
     padding: 12em;
     border: 2px solid white;
     z-index: 3;
+}
+
+legend {
+    display: block;
+    padding-left: 2px;
+    padding-right: 2px;
+    border: none;
 }
 
 a.white {
@@ -68,12 +70,13 @@ a.white {
     overflow: auto;
     padding: 10px
 }
-.cardstyle{
+
+.cardstyle {
     border: 1px solid white;
 }
-.cardstyle:hover {
-background: rgba(0, 0, 0, 0.8);
 
+.cardstyle:hover {
+    background: rgba(0, 0, 0, 0.8);
 }
 
 .row {
@@ -111,4 +114,47 @@ input:focus {
     color: #ffffff;
     background-size: cover;
     background-attachment: fixed;
+}
+
+@media screen and (max-width: 400px) {
+    .display {
+        font-size: 33pt;
+    }
+    .center {
+        padding: 4em;
+        z-index: 1;
+    }
+    .slide {
+        width: 100%;
+        border: 1px solid black;
+        height: 250px;
+        transition: all 1s;
+    }
+    .slide-news {
+        width: 100%;
+        border: 1px solid black;
+        height: 300px;
+        transition: all 1s;
+    }
+}
+@media screen and (max-width: 720px) {
+    .display {
+        font-size: 33pt;
+    }
+    .center {
+        padding: 5em;
+        z-index: 1;
+    }
+    .slide {
+        width: 100%;
+        border: 1px solid black;
+        height: 250px;
+        transition: all 1s;
+    }
+    .slide-news {
+        width: 100%;
+        border: 1px solid black;
+        height: 300px;
+        transition: all 1s;
+    }
 }
